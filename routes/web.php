@@ -17,8 +17,13 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/sign-up', function () {
+    return view('signup');
+})->name('sign-up');
 
-
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
 
 
 
