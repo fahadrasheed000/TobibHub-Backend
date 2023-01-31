@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang='en'>
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no' name='viewport'>
     <link href="{{asset('assets/common.css')}}" rel='stylesheet'>
     <link href="{{asset('assets/header_updated.css')}}" rel='stylesheet'>
     <link href="{{asset('assets/home_updated.css')}}" rel='stylesheet'>
+    <link href="{{asset('assets/signup-card-mainlogin.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/support-card.scss')}}" rel="stylesheet">
     <script src="{{asset('assets/js/jquery_3_1_1.min.js')}}"></script>
-    <title>TobibHub Connecting Healthcare</title>
+    <title>TobibHub Signup</title>
 </head>
-
-<body class='background-image-for-front-side controller__b2c action__landing wopiz-background font-clr'>
+<body class="background-image-for-front-side controller__users action__b2c_sign_up wopiz-background font-clr"
+      data-new-gr-c-s-check-loaded="14.1094.0" data-gr-ext-installed="">
 <main>
-    <div class='page-wrap'>
-        <div id='alert_modal_div'></div>
+    <div class="page-wrap">
+        <div id="alert_modal_div"></div>
         <header class="main-header">
             <div class="container">
                 <div class="header-inner">
@@ -284,8 +282,8 @@
                         <div class="login-area">
                             <ul class="login-link">
                                 <li>
-                                    <a href="{{route('sign-up')}}">Login / Signup</a>
-                                   </li>
+                                    <a href="#">Login / Signup</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -551,811 +549,95 @@
                 </div>
             </div>
         </div>
-        <div class='errors__container'>
-            <div class='container'>
+        <div class="errors__container">
+            <div class="container">
             </div>
         </div>
-
-
-        <section class="landing-banner" id="search_banner_visibility">
-            <div class="container">
-                <div class="landing-banner-inner">
-                    <div class="landing-banner-top">
-                        <h1>Connect with doctors around you</h1>
-                        <p>Book Inclinic Appointments from the comfort of your home.</p>
-                        <span class="city-dropdown-mobile mobile show-modal-mobile">
-                                <svg width="14" height="17" class="map-mobile" viewBox="0 0 14 17"
-                                     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14 7.5C14 12.3968 9.12204 15.3898 7.51013 16.2451C7.18774 16.4162 6.81226 16.4162 6.48987 16.2451C4.87795 15.3898 0 12.3968 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5Z"
-                                        fill="#163E73"/>
-                                    <circle cx="7" cy="7.5" r="3" fill="#DCE8FA"/>
-                                </svg>
-                                <span>Malacca</span>
-                                <svg width="10" height="7" class="city-dropdown-arrow" viewBox="0 0 10 7"
-                                     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5 6.5C4.8634 6.50016 4.72833 6.47235 4.60381 6.41843C4.47929 6.36451 4.36818 6.28571 4.27791 6.1873L0.18047 1.71643C0.0509653 1.56828 -0.0130167 1.37737 0.00220677 1.18452C0.0174293 0.991672 0.110648 0.812195 0.26193 0.684466C0.413214 0.556736 0.610552 0.490893 0.811749 0.501015C1.01295 0.511138 1.20203 0.596422 1.33858 0.738631L4.92148 4.64823C4.93128 4.65896 4.94336 4.66756 4.9569 4.67345C4.97044 4.67934 4.98513 4.68239 5 4.68239C5.01487 4.68239 5.02956 4.67934 5.0431 4.67345C5.05664 4.66756 5.06872 4.65896 5.07852 4.64823L8.66142 0.738632C8.79797 0.596422 8.98705 0.511138 9.18825 0.501016C9.38945 0.490894 9.58679 0.556737 9.73807 0.684466C9.88935 0.812195 9.98257 0.991672 9.99779 1.18452C10.013 1.37737 9.94903 1.56828 9.81953 1.71643L5.72335 6.18569C5.63291 6.28435 5.52164 6.3634 5.39692 6.41759C5.2722 6.47178 5.1369 6.49987 5 6.5Z"
-                                        fill="#1E4275"/>
-                                </svg>
-                            </span>
-                        <div class="landing-search-area">
-                            <div class="search-block mobile show-modal-mobile">
-                                <div class="search-main">
-                                        <span class="search-ico">
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <use xlink:href="#search-icon"></use>
-                                            </svg>
-                                        </span>
-                                    <div class="input-area">
-                                        <input type="text" name="doctor_name" class=""
-                                               placeholder="Search for anything" value="">
+        <div class="container">
+            <div class="b2c_signup_inner">
+                <div class="signup-wrapper">
+                    <div class="inner-wrapper">
+                        <div class="content">
+                            <h1>
+                                Create an account
+                            </h1>
+                            <p>
+                                We will use this information to contact you regarding booking confirmations.
+                            </p>
+                            <form class="form-horizontal" id="new_user" action="#"
+                                  accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓">
+                                <div class="form">
+                                    <div class="input-wrapper">
+                                        <input required="required" placeholder="Your Name" type="text"
+                                               autocomplete="off" name="user[first_name]" id="user_first_name">
                                     </div>
-                                    <button class="input-action" type="submit">Search</button>
-                                </div>
-                            </div>
-                            <div class="search-block hide-modal-mobile">
-                                <div class="search-city">
-                                        <span class="city-name" id="search_cities">
-                                            <input name="city_name" id="city_name"
-                                                   class="city_name search_bar_city typeahead tt-query event-city-selection-doctor-search"
-                                                   type="text" placeholder="City" value="">
-                                            <input type="hidden" name="locality" id="locality" value=""
-                                                   class="locality"/>
-                                        </span>
-                                    <span class="location">
-                                            <div class="loader spinner-border d-none">
-                                                <span class="location-icon">
-                                                    <svg width="18" height="19" viewBox="0 0 18 19"
-                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <use xlink:href="#search-location"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </span>
-                                </div>
-                                <div class="search-main">
-                                        <span class="search-ico">
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <use xlink:href="#search-icon"></use>
-                                            </svg>
-                                        </span>
-                                    <div class="input-area">
-                                        <input type="text" name="doctor_name" id="search_doctors"
-                                               class="search_doctors search_bar_doc typeahead tt-query tt-input event-speciality-selection-doctor-search"
-                                               placeholder="Search for doctor, hospital, disease, medicine, specialties and lab test"
-                                               value=""></input>
-                                    </div>
-                                    <button class="input-action" type="submit">Search</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="landing-banner-img">
-                        <img src="{{asset('assets/imgs/banner-img.webp')}}" width="406" height="582"
-                             alt="">
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <script>
-            $("#search_doctors").focus(function () {
-
-                if (($(window).innerWidth() < 768) && ($(window).scrollTop() < 201)) {
-                    $('html, body').animate({
-                        scrollTop: $('.landing-search-area').offset().top - 261
-                    }, 500);
-                }
-            })
-        </script>
-
-        <section class="landing-services">
-            <div class="container">
-                <h2>How can we help?</h2>
-                <div class="servives-block-wrap">
-                    <a href="#" class="servives-block pharmacy">
-                        <div class="left">
-                            <h3>Online Pharmacy</h3>
-                            <p>Get all types of medicines delivered at your doorstep!</p>
-                            <p class="flat-percentage">Upto <strong>14%</strong> OFF</p>
-                            <svg width="22" class="back-arrow" height="20" viewBox="0 0 22 20"
-                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20.9016 9.44659L14.3762 1.43691C13.956 0.890306 13.1256 0.841572 12.6385 1.31741C12.1515 1.79325 12.1022 2.70083 12.5537 3.21669L17.2694 9.00154L1.22366 9.00154C0.547968 9.00154 -8.53889e-07 9.59936 -7.91451e-07 10.3366C-7.29012e-07 11.0738 0.547662 11.6716 1.22366 11.6716L17.2694 11.6716L12.5537 17.4564C12.1022 17.9723 12.1631 18.8784 12.6505 19.3542C13.1375 19.8301 13.9561 19.7829 14.3762 19.2363L20.9016 11.2266C21.3278 10.5791 21.2936 9.99771 20.9016 9.44681L20.9016 9.44659Z"
-                                    fill="#163E73"/>
-                            </svg>
-                        </div>
-                        <figure class="right">
-                            <img class="img" alt="Ios App button" title="" width="191"
-                                 height="261" src="{{asset('assets/imgs/pharmacy.webp')}}"/>
-                        </figure>
-                    </a>
-                    <a href="#" class="servives-block find-doctor">
-                        <div class="left">
-                            <h3>Find doctor</h3>
-                            <p>Find doctors and book appointment</p>
-                            <p class="flat-percentage"><strong>12000+</strong> Doctors available</p>
-                            <svg width="22" class="back-arrow" height="20" viewBox="0 0 22 20"
-                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20.9016 9.44659L14.3762 1.43691C13.956 0.890306 13.1256 0.841572 12.6385 1.31741C12.1515 1.79325 12.1022 2.70083 12.5537 3.21669L17.2694 9.00154L1.22366 9.00154C0.547968 9.00154 -8.53889e-07 9.59936 -7.91451e-07 10.3366C-7.29012e-07 11.0738 0.547662 11.6716 1.22366 11.6716L17.2694 11.6716L12.5537 17.4564C12.1022 17.9723 12.1631 18.8784 12.6505 19.3542C13.1375 19.8301 13.9561 19.7829 14.3762 19.2363L20.9016 11.2266C21.3278 10.5791 21.2936 9.99771 20.9016 9.44681L20.9016 9.44659Z"
-                                    fill="#163E73"/>
-                            </svg>
-                        </div>
-                        <figure class="right">
-                            <img class="img" alt="Ios App button" title="Ios App button" width="169"
-                                 height="239" src="{{asset('assets/imgs/find_doctor.webp')}}"/>
-                        </figure>
-                    </a>
-                    <a href="#" class="servives-block lab-tests">
-                        <div class="left">
-                            <h3>Lab Tests</h3>
-                            <p>Home sampling & lab bookings by Chughtai Labs</p>
-                            <p class="flat-percentage">UPTO <strong>40%</strong> OFF</p>
-                            <svg width="22" class="back-arrow" height="20" viewBox="0 0 22 20"
-                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20.9016 9.44659L14.3762 1.43691C13.956 0.890306 13.1256 0.841572 12.6385 1.31741C12.1515 1.79325 12.1022 2.70083 12.5537 3.21669L17.2694 9.00154L1.22366 9.00154C0.547968 9.00154 -8.53889e-07 9.59936 -7.91451e-07 10.3366C-7.29012e-07 11.0738 0.547662 11.6716 1.22366 11.6716L17.2694 11.6716L12.5537 17.4564C12.1022 17.9723 12.1631 18.8784 12.6505 19.3542C13.1375 19.8301 13.9561 19.7829 14.3762 19.2363L20.9016 11.2266C21.3278 10.5791 21.2936 9.99771 20.9016 9.44681L20.9016 9.44659Z"
-                                    fill="#163E73"/>
-                            </svg>
-                        </div>
-                        <figure class="right">
-                            <img class="img" alt="Ios App button" title="" width="200"
-                                 height="175" src="{{asset('assets/imgs/lab_tests.webp')}}"/>
-                        </figure>
-                    </a>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="container mission-statement landing-top-heading">
-            <div class="mission-statement-detail">
-                <div class="statement">
-                    <p class="hd-small-text">Mission Statement</p>
-                    <h3>Your health, our priority</h3>
-                </div>
-                <div class="detial">
-                    <p>TobibHub is on a mission to make quality healthcare more accessible and affordable for 220
-                        Million+ Malaysian's. We believe in empowering our users with the most accurate,
-                        comprehensive, curated information, care and enabling them to make better healthcare
-                        decisions.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </section>
-        <section class="top-specialties">
-            <div class="container">
-                <h2>Top searched <span>Specialties</span></h2>
-                <div class="top-specialties-inner">
-                    <a href="#" class="top-specialties-block">
-                        <h3>
-                            <span>Dentist</span>
-                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 8.5L16.7809 7.87531L17.2806 8.5L16.7809 9.12469L16 8.5ZM1 9.5C0.447715 9.5 0 9.05229 0 8.5C0 7.94772 0.447715 7.5 1 7.5V9.5ZM10.7809 0.375305L16.7809 7.87531L15.2191 9.12469L9.21913 1.6247L10.7809 0.375305ZM16.7809 9.12469L10.7809 16.6247L9.21913 15.3753L15.2191 7.87531L16.7809 9.12469ZM16 9.5H1V7.5H16V9.5Z"
-                                    fill="black"/>
-                            </svg>
-                        </h3>
-                        <div class="icon-block">
-                            <img src="{{asset('assets/imgs/Dentist.svg')}}"
-                                 alt="stethoscope image" width="90" height="90">
-                        </div>
-                        <p></p>
-                    </a>
-                    <a href="#" class="top-specialties-block">
-                        <h3>
-                            <span>Cardiac Surgeon</span>
-                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 8.5L16.7809 7.87531L17.2806 8.5L16.7809 9.12469L16 8.5ZM1 9.5C0.447715 9.5 0 9.05229 0 8.5C0 7.94772 0.447715 7.5 1 7.5V9.5ZM10.7809 0.375305L16.7809 7.87531L15.2191 9.12469L9.21913 1.6247L10.7809 0.375305ZM16.7809 9.12469L10.7809 16.6247L9.21913 15.3753L15.2191 7.87531L16.7809 9.12469ZM16 9.5H1V7.5H16V9.5Z"
-                                    fill="black"/>
-                            </svg>
-                        </h3>
-                        <div class="icon-block">
-                            <img src="{{asset('assets/imgs/Cardiologist.svg')}}"
-                                 alt="stethoscope image" width="90" height="90">
-                        </div>
-                        <p></p>
-                    </a>
-                    <a href="#" class="top-specialties-block">
-                        <h3>
-                            <span>General Physician</span>
-                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 8.5L16.7809 7.87531L17.2806 8.5L16.7809 9.12469L16 8.5ZM1 9.5C0.447715 9.5 0 9.05229 0 8.5C0 7.94772 0.447715 7.5 1 7.5V9.5ZM10.7809 0.375305L16.7809 7.87531L15.2191 9.12469L9.21913 1.6247L10.7809 0.375305ZM16.7809 9.12469L10.7809 16.6247L9.21913 15.3753L15.2191 7.87531L16.7809 9.12469ZM16 9.5H1V7.5H16V9.5Z"
-                                    fill="black"/>
-                            </svg>
-                        </h3>
-                        <div class="icon-block">
-                            <img src="{{asset('assets/imgs/stethoscope.svg')}}"
-                                 alt="stethoscope image" width="90" height="90">
-                        </div>
-                        <p></p>
-                    </a>
-                    <a href="#" class="top-specialties-block">
-                        <h3>
-                            <span>Allergy Specialist</span>
-                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 8.5L16.7809 7.87531L17.2806 8.5L16.7809 9.12469L16 8.5ZM1 9.5C0.447715 9.5 0 9.05229 0 8.5C0 7.94772 0.447715 7.5 1 7.5V9.5ZM10.7809 0.375305L16.7809 7.87531L15.2191 9.12469L9.21913 1.6247L10.7809 0.375305ZM16.7809 9.12469L10.7809 16.6247L9.21913 15.3753L15.2191 7.87531L16.7809 9.12469ZM16 9.5H1V7.5H16V9.5Z"
-                                    fill="black"/>
-                            </svg>
-                        </h3>
-                        <div class="icon-block">
-                            <img src="{{asset('assets/imgs/Allergy.svg')}}"
-                                 alt="stethoscope image" width="90" height="90">
-                        </div>
-                        <p></p>
-                    </a>
-                </div>
-                <span class="see-more">
-                        <a href="#">
-                            View all Specialties
-                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.23593 5.24295C6.2361 5.38619 6.2072 5.52783 6.15115 5.6584C6.09511 5.78897 6.01321 5.90547 5.91093 6.00013L1.26426 10.2967C1.11029 10.4325 0.911868 10.4996 0.711437 10.4836C0.511006 10.4676 0.324471 10.3699 0.19172 10.2112C0.0589678 10.0526 -0.00946448 9.84569 0.00105571 9.63471C0.0115759 9.42374 0.100214 9.22546 0.248015 9.08229L4.31135 5.32528C4.3225 5.31501 4.33144 5.30235 4.33756 5.28815C4.34368 5.27395 4.34685 5.25854 4.34685 5.24295C4.34685 5.22736 4.34368 5.21196 4.33756 5.19776C4.33144 5.18356 4.3225 5.1709 4.31135 5.16062L0.248015 1.40362C0.100214 1.26044 0.0115759 1.06217 0.00105571 0.851192C-0.00946448 0.640218 0.0589678 0.433292 0.19172 0.274658C0.324471 0.116025 0.511006 0.0182762 0.711437 0.00231382C0.911868 -0.0136486 1.11029 0.0534422 1.26426 0.18924L5.90926 4.48446C6.0118 4.57929 6.09396 4.69597 6.15028 4.82675C6.2066 4.95752 6.2358 5.0994 6.23593 5.24295Z"
-                                    fill="#1E4275"/>
-                            </svg>
-                        </a>
-                    </span>
-            </div>
-        </section>
-
-        <section class="health-tutorial">
-            <div class="container">
-                <div class="health-tutorial-wrap">
-                    <div class="health-tutorial-left">
-                        <div class="heading-block how-we-work">
-                            <span class="hd-small-text">HOW WE WORK</span>
-                            <h2>
-                                Serving all your healthcare needs at one place!
-                            </h2>
-                        </div>
-                        <div class="tutorial-tabs">
-                            <ul>
-                                <li><a class="tabs__btn is-active" data-tab-target="tab-1" href="#">Doctor
-                                        Appointments</a></li>
-                                <li><a class="tabs__btn" data-tab-target="tab-2" href="#">Pharmacy</a></li>
-                                <li><a class="tabs__btn" data-tab-target="tab-3" href="#">Lab Tests</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div
-                            class="tutorial-list changed-area tabs__pane is-visible tab-1 doctor-appointments tutorial-list2">
-                            <h3>Book appointment in three easy steps!</h3>
-                            <ol>
-                                <li><span>Select doctor by speciality, hospital, services, and health
-                                            condition.</span></li>
-                                <li><span>Choose the time to book appointment as per your convenience.</span></li>
-                                <li><span>Enter your details to confirm your appointment.</span></li>
-                            </ol>
-                        </div>
-                        <div class="tutorial-list changed-area tabs__pane tab-2 tutorial-list2">
-                            <h3>Order in three easy steps!</h3>
-                            <ol>
-                                <li><span>Search and select your medicine</span></li>
-                                <li><span>Enter your details to confirm your order</span></li>
-                                <li><span>Sit back and your medicine will be delivered at your doorstep</span></li>
-                            </ol>
-                        </div>
-                        <div class="tutorial-list changed-area tabs__pane tab-3 tutorial-list2">
-                            <h3>Book lab tests in three easy steps!</h3>
-                            <ol>
-                                <li><span>Search and select the test from the list</span></li>
-                                <li><span>Choose Home sampling or lab collection</span></li>
-                                <li><span>You will be notified once your tests are out and will be added to your
-                                            medical record.</span></li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="health-tutorial-right">
-                        <figure class="is-visible tabs__pane tab-1">
-                            <img alt="" title="" width="580" height="388" loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/tab_doctor.webp')}}">
-
-                        </figure>
-                        <figure class="tabs__pane tab-2">
-                            <img alt="" title="" width="580" height="388" loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/tab_pharmacy.webp')}}">
-
-                        </figure>
-                        <figure class="tabs__pane tab-3">
-                            <img alt="" title="" width="580" height="388" loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/tab_lab.webp')}}">
-
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script>
-            // Tabs
-            const tabBtns = document.querySelectorAll(".tabs__btn");
-            const tabPanes = document.getElementsByClassName("tabs__pane");
-
-            let fadeTime = 200;
-
-            function fadeOut(target) {
-                target.style.opacity = 1;
-                target.style.transition = `opacity ${fadeTime}ms`;
-                target.style.opacity = 0;
-                setTimeout(() => {
-                    target.style.display = "none";
-                }, fadeTime);
-            }
-
-            function fadeIn(target) {
-                target.style.opacity = 0;
-                target.style.transition = `opacity ${fadeTime}ms`;
-                target.style.opacity = 1;
-                setTimeout(() => {
-                    target.style.display = "block";
-                }, fadeTime);
-            }
-
-            function triggerTab(elt) {
-                elt.preventDefault();
-
-                tabBtns.forEach((btn) => {
-                    btn.classList.remove("is-active");
-                    btn.setAttribute("aria-selected", false);
-                });
-
-                [].forEach.call(tabPanes, (pane) => {
-                    fadeOut(pane);
-                });
-
-                elt.target.classList.add("is-active");
-                elt.target.setAttribute("aria-selected", true);
-                let clickedTab = elt.target.dataset.tabTarget;
-                let all_tabs = document.querySelectorAll(`.${clickedTab}`)
-                all_tabs.forEach((custom) => {
-
-                    console.log(custom)
-                });
-                console.log(all_tabs)
-
-                all_tabs.forEach((custom) => {
-                    fadeIn(custom);
-                });
-
-            }
-
-            tabBtns.forEach((tab) => {
-                tab.addEventListener("click", triggerTab);
-            });
-        </script>
-
-        {{--            <section class="landing-pharmacy">--}}
-        {{--                <div class="container">--}}
-        {{--                    <div class="heading-block heading-pharmacy">--}}
-        {{--                        <span class="hd-small-text">PHARMACY</span>--}}
-        {{--                        <h2>--}}
-        {{--                            Wide range of medicines--}}
-        {{--                        </h2>--}}
-        {{--                    </div>--}}
-        {{--                    <div class="landing-pharmacy-inner">--}}
-        {{--                        <div class="pharmacy-grid-wrap">--}}
-        {{--                            <div class="pharmacy-block pharmacy-block-first">--}}
-        {{--                                <div class="add-to-cart desktop">--}}
-
-
-        {{--                                </div>--}}
-        {{--                                <figure class="cart-image">--}}
-        {{--                                    <img alt="" title="" width="" height=""--}}
-        {{--                                        loading="lazy"--}}
-        {{--                                        src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="--}}
-        {{--                                        data-original="https://d3313lwq5y3sh2.cloudfront.net/assets/photos/001/047/031/original/PAMPERS_5_JUNIOR_(8S).webp?1670324927">--}}
-        {{--                                </figure>--}}
-        {{--                                <span class="medi-name">--}}
-        {{--                                    PAMPERS 5 JUNIOR (8S)--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-desc">--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-price">--}}
-        {{--                                    <strong>Rs. 311.88</strong>--}}
-        {{--                                    <del>Rs. 339.0</del>--}}
-        {{--                                </span>--}}
-        {{--                                <a class="landing-pharmacy-button mobile" href="pharmacy.html">View Items</a>--}}
-        {{--                            </div>--}}
-        {{--                            <div class="pharmacy-block">--}}
-        {{--                                <div class="add-to-cart desktop">--}}
-        {{--                                    <a class="medi-cart-detail">--}}
-        {{--                                        <span class="price"--}}
-        {{--                                            onclick="window.location='pharmacy/pampers-3-midi-pants-9s.html'">Add to--}}
-        {{--                                            Cart</span>--}}
-        {{--                                    </a>--}}
-        {{--                                </div>--}}
-        {{--                                <figure class="cart-image">--}}
-        {{--                                    <img alt="" title="" width="" height=""--}}
-        {{--                                        loading="lazy"--}}
-        {{--                                        src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="--}}
-        {{--                                        data-original="https://d3313lwq5y3sh2.cloudfront.net/assets/photos/001/047/023/original/PAMPERS_3_MIDI_PANTS_(9S).webp?1670324890">--}}
-        {{--                                </figure>--}}
-        {{--                                <span class="medi-name">--}}
-        {{--                                    PAMPERS 3 MIDI PANTS (9S)--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-desc">--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-price">--}}
-        {{--                                    <strong>Rs. 311.88</strong>--}}
-        {{--                                    <del>Rs. 339.0</del>--}}
-        {{--                                </span>--}}
-        {{--                                <a class="landing-pharmacy-button mobile"--}}
-        {{--                                    href="pharmacy/pampers-3-midi-pants-9s.html">Add to Cart</a>--}}
-        {{--                            </div>--}}
-        {{--                            <div class="pharmacy-block">--}}
-        {{--                                <div class="add-to-cart desktop">--}}
-        {{--                                    <a class="medi-cart-detail">--}}
-        {{--                                        <span class="price"--}}
-        {{--                                            onclick="window.location='pharmacy/vaseline-lotion-green-100ml-aloe-sothe-859328.html'">Add--}}
-        {{--                                            to Cart</span>--}}
-        {{--                                    </a>--}}
-        {{--                                </div>--}}
-        {{--                                <figure class="cart-image">--}}
-        {{--                                    <img alt="" title="" width="" height=""--}}
-        {{--                                        loading="lazy"--}}
-        {{--                                        src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="--}}
-        {{--                                        data-original="https://d3313lwq5y3sh2.cloudfront.net/assets/photos/001/087/640/original/VASELINE_LOTION(GREEN)100ML_ALOE_SOTHE__1.webp?1673609182">--}}
-        {{--                                </figure>--}}
-        {{--                                <span class="medi-name">--}}
-        {{--                                    VASELINE LOTION(GREEN)100ML ALOE SOTHE--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-desc">--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-price">--}}
-        {{--                                    <strong>Rs. 270.0</strong>--}}
-        {{--                                    <del>Rs. 300.0</del>--}}
-        {{--                                </span>--}}
-        {{--                                <a class="landing-pharmacy-button mobile"--}}
-        {{--                                    href="pharmacy/vaseline-lotion-green-100ml-aloe-sothe-859328.html">Add to Cart</a>--}}
-        {{--                            </div>--}}
-        {{--                            <div class="pharmacy-block">--}}
-        {{--                                <div class="add-to-cart desktop">--}}
-        {{--                                    <a class="medi-cart-detail">--}}
-        {{--                                        <span class="price"--}}
-        {{--                                            onclick="window.location='pharmacy/finlac-2-400g-858080.html'">Add to--}}
-        {{--                                            Cart</span>--}}
-        {{--                                    </a>--}}
-        {{--                                </div>--}}
-        {{--                                <figure class="cart-image">--}}
-        {{--                                    <img alt="" title="" width="" height=""--}}
-        {{--                                        loading="lazy"--}}
-        {{--                                        src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="--}}
-        {{--                                        data-original="https://d3313lwq5y3sh2.cloudfront.net/assets/photos/001/045/039/original/FINLAC_2_400G__1.webp?1670316001">--}}
-        {{--                                </figure>--}}
-        {{--                                <span class="medi-name">--}}
-        {{--                                    FINLAC 2 400G--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-desc">--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-price">--}}
-        {{--                                    <strong>Rs. 1377.5</strong>--}}
-        {{--                                    <del>Rs. 1450.0</del>--}}
-        {{--                                </span>--}}
-        {{--                                <a class="landing-pharmacy-button mobile"--}}
-        {{--                                    href="pharmacy/finlac-2-400g-858080.html">Add to Cart</a>--}}
-        {{--                            </div>--}}
-        {{--                            <div class="pharmacy-block">--}}
-        {{--                                <div class="add-to-cart desktop">--}}
-        {{--                                    <a class="medi-cart-detail">--}}
-        {{--                                        <span class="price"--}}
-        {{--                                            onclick="window.location='pharmacy/emhart-5-80mg-tab-14s.html'">Add to--}}
-        {{--                                            Cart</span>--}}
-        {{--                                    </a>--}}
-        {{--                                </div>--}}
-        {{--                                <figure class="cart-image">--}}
-        {{--                                    <img alt="" title="" width="" height=""--}}
-        {{--                                        loading="lazy"--}}
-        {{--                                        src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="--}}
-        {{--                                        data-original="../d3313lwq5y3sh2.cloudfront.net/assets/photos/000/344/724/original/EMHART_5(80MG_TAB0fac.png?1656925695">--}}
-        {{--                                </figure>--}}
-        {{--                                <span class="medi-name">--}}
-        {{--                                    EMHART 5/80MG TAB--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-desc">--}}
-        {{--                                    Genetics Pharmaceuticals--}}
-        {{--                                </span>--}}
-        {{--                                <span class="medi-price">--}}
-        {{--                                    <strong>Rs. 289.8</strong>--}}
-        {{--                                    <del>Rs. 322.0</del>--}}
-        {{--                                </span>--}}
-        {{--                                <a class="landing-pharmacy-button mobile"--}}
-        {{--                                    href="pharmacy/emhart-5-80mg-tab-14s.html">Add to Cart</a>--}}
-        {{--                            </div>--}}
-        {{--                        </div>--}}
-        {{--                        <span class="see-more">--}}
-        {{--                            <a href="pharmacy.html">--}}
-        {{--                                View Online Pharmacy--}}
-        {{--                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"--}}
-        {{--                                    xmlns="http://www.w3.org/2000/svg">--}}
-        {{--                                    <path--}}
-        {{--                                        d="M6.23593 5.24295C6.2361 5.38619 6.2072 5.52783 6.15115 5.6584C6.09511 5.78897 6.01321 5.90547 5.91093 6.00013L1.26426 10.2967C1.11029 10.4325 0.911868 10.4996 0.711437 10.4836C0.511006 10.4676 0.324471 10.3699 0.19172 10.2112C0.0589678 10.0526 -0.00946448 9.84569 0.00105571 9.63471C0.0115759 9.42374 0.100214 9.22546 0.248015 9.08229L4.31135 5.32528C4.3225 5.31501 4.33144 5.30235 4.33756 5.28815C4.34368 5.27395 4.34685 5.25854 4.34685 5.24295C4.34685 5.22736 4.34368 5.21196 4.33756 5.19776C4.33144 5.18356 4.3225 5.1709 4.31135 5.16062L0.248015 1.40362C0.100214 1.26044 0.0115759 1.06217 0.00105571 0.851192C-0.00946448 0.640218 0.0589678 0.433292 0.19172 0.274658C0.324471 0.116025 0.511006 0.0182762 0.711437 0.00231382C0.911868 -0.0136486 1.11029 0.0534422 1.26426 0.18924L5.90926 4.48446C6.0118 4.57929 6.09396 4.69597 6.15028 4.82675C6.2066 4.95752 6.2358 5.0994 6.23593 5.24295Z"--}}
-        {{--                                        fill="#1E4275"></path>--}}
-        {{--                                </svg>--}}
-        {{--                            </a>--}}
-        {{--                        </span>--}}
-        {{--                    </div>--}}
-        {{--                </div>--}}
-        {{--            </section>--}}
-
-        <section class="container mission-statement corporate-wellness-hd">
-            <div class="mission-statement-detail">
-                <div class="statement">
-                    <p class="hd-small-text">Corporate Wellness Program</p>
-                    <h3>Empower the wellbeing of your employees</h3>
-                </div>
-                <div class="detial">
-                    <p>Free live video consultation with doctors along with fitness sessions. Exclusive discounts of
-                        medicine and lab tests and much more. Upto 14% off on all medicines, Upto 40% off on all
-                        chugtai Lab tests</p>
-                    <a class="readmore_detail" href="#">Read More</a>
-                </div>
-            </div>
-        </section>
-        <section class="container-fluid life-at-healtheire">
-
-            <section class="splide">
-                <div class="container">
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2 9L1.21913 8.37531L0.719375 9L1.21913 9.62469L2 9ZM17 10C17.5523 10 18 9.55229 18 9C18 8.44772 17.5523 8 17 8V10ZM7.21913 0.875305L1.21913 8.37531L2.78087 9.62469L8.78087 2.1247L7.21913 0.875305ZM1.21913 9.62469L7.21913 17.1247L8.78087 15.8753L2.78087 8.37531L1.21913 9.62469ZM2 10H17V8H2V10Z"
-                                    fill="#1E4275"/>
-                            </svg>
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 9L16.7809 8.37531L17.2806 9L16.7809 9.62469L16 9ZM1 10C0.447715 10 0 9.55229 0 9C0 8.44772 0.447715 8 1 8V10ZM10.7809 0.875305L16.7809 8.37531L15.2191 9.62469L9.21913 2.1247L10.7809 0.875305ZM16.7809 9.62469L10.7809 17.1247L9.21913 15.8753L15.2191 8.37531L16.7809 9.62469ZM16 10H1V8H16V10Z"
-                                    fill="#1E4275"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="splide__track">
-                    <div class="mar-images splide__list">
-                        <figure class="splide__slide small">
-                            <img alt="" title="" width="376" height="334"
-                                 loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/frame1.webp')}}">
-
-                        </figure>
-                        <figure class="splide__slide big add-space">
-                            <img alt="" title="" width="376" height="461"
-                                 loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/frame2.webp')}}">
-
-                        </figure>
-                        <figure class="splide__slide small">
-                            <img alt="" title="" width="376" height="334"
-                                 loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/frame3.webp')}}">
-
-                        </figure>
-                        <figure class="splide__slide big">
-                            <img alt="" title="" width="376" height="461"
-                                 loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/frame4.webp')}}">
-
-                        </figure>
-                        <figure class="splide__slide big">
-                            <img alt="" title="" width="376" height="334"
-                                 loading="lazy"
-                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                 data-original="{{asset('assets/imgs/frame5.webp')}}">
-
-                        </figure>
-                    </div>
-                </div>
-            </section>
-            <script src="{{asset('assets/js/splide.min.js')}}"></script>
-            <script src="{{asset('assets/js/splide-extension-auto-scroll.min.js')}}"></script>
-            <script>
-                setTimeout(function () {
-                    const splide = new Splide('.splide', {
-                        type: 'loop',
-                        drag: 'free',
-                        arrows: true,
-                        pagination: true,
-                        focus: 'center',
-                        perPage: 5,
-                        breakpoints: {
-                            768: {
-                                perPage: 1,
-                            },
-                        },
-                        autoScroll: {
-                            speed: 2,
-                        },
-                    });
-
-                    splide.mount(window.splide.Extensions);
-                }, 4000);
-            </script>
-        </section>
-
-        <section class="landing-article-section">
-            <div class="container">
-                <div class="heading-block">
-                    <span class="hd-small-text">News & Articles</span>
-                    <h2>
-                        Read top articles of the day
-                    </h2>
-                    <p>Health articles that keep you informed about good health practices and achieve your goals.
-                    </p>
-                </div>
-                <div class="article-block-outer">
-                    <div class="article-block-inner">
-                        <div class="article-blcok">
-                            <figure>
-                                <a
-                                    href="#">
-                                    <img alt="" title="" width="376" height="217"
-                                         loading="lazy"
-                                         src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                         data-original="{{asset('assets/imgs/difference-between-physical-therapy-and-rehabilitation.webp')}}">
-                                </a>
-                            </figure>
-                            <h6>Pain Management</h6>
-                            <p>Difference Between Physical Therapy and Rehabilitation – Read to Learn!</p>
-                            </a>
-                        </div>
-                        <div class="article-blcok">
-                            <a href="#">
-                                <figure>
-                                    <img alt="" title="" width="376" height="217"
-                                         loading="lazy"
-                                         src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                         data-original="{{asset('assets/imgs/how-to-stop-hiccups.webp')}}">
-                                </figure>
-                                <h6>General Health</h6>
-                                <p>How to Stop Hiccups – Easy Tips and Tricks to Try</p>
-                            </a>
-                        </div>
-                        <div class="article-blcok">
-                            <a href="#">
-                                <figure>
-                                    <img alt="" title="" width="376" height="217"
-                                         loading="lazy"
-                                         src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                         data-original="{{asset('assets/imgs/homeopathy-vs-allopathy.webp')}}">
-                                </figure>
-                                <h6>Herbal Health</h6>
-                                <p>Homeopathy Vs Allopathy – Which Approach Works Best?</p>
-                            </a>
-                        </div>
-                    </div>
-                    <span class="view-all-btn">
-                            <a href="#">View all </a>
-                        </span>
-                </div>
-            </div>
-        </section>
-
-        <section class="corporate-healthwire-app">
-            <div class="container">
-                <div class="healthwire-app-inner">
-                    <figure class="app-figure-img">
-                        <img alt="" title="" width="342" height="422" loading="lazy"
-                             src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                             data-original="{{asset('assets/imgs/footer_mobile.webp')}}">
-
-                    </figure>
-                    <div class="healthwire-app-content">
-                        <div class="cor-header">
-                            <h3>Thousands of doctors. <span>One app.</span></h3>
-                            <p>The TobibHub app is the quickest, easiest way to book and keep track of your
-                                appointments.</p>
-                        </div>
-                        <div class="send-app-link-area">
-                            <h4>Send the link to download the app</h4>
-                            <form action="#" accept-charset="UTF-8"
-                                  data-remote="true" method="post"><input name="utf8" type="hidden"
-                                                                          value="&#x2713;"/>
-                                <div class="send-app-form-area">
-                                    <div class="number-area">
+                                    <div class="num-input-wrapper">
                                         <span>+60</span>
-                                        <input type="text" placeholder="Mobile Number" id="phone_to_send"
-                                               name="phone_to_send" pattern="[3]{1}[0-9]{2}[0-9]{3}[0-9]{4}"
-                                               required="true"/>
+                                        <input required="required"
+                                               class="phone_trigger phone_validation numbers phone-number-field event-book-appointment-num-field"
+                                               placeholder="Mobile Number" type="tel"
+                                               pattern="[3]{1}[0-9]{2}[0-9]{3}[0-9]{4}" maxlength="10" size="10"
+                                               autocomplete="off" name="user[phone]" id="user_phone">
                                     </div>
-                                    <button class="hbutton" type="submit">Send app link</button>
+                                    <div class="btn-area">
+                                        <input type="submit" name="commit" value="Continue" class="btn"
+                                               data-disable-with="Please wait..." data-type="button">
+                                        <a>Already a user? </a>
+                                        <a class="login" href="{{route('login')}}">Login</a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="app-store">
-                            <ul>
-                                <li><a
-                                        href="#">
-                                        <svg width="135" height="40" viewBox="0 0 135 40"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <rect width="135" height="40" fill="url(#pattern0)"/>
-                                            <defs>
-                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox"
-                                                         width="1" height="1">
-                                                    <use xlink:href="#image0_38_27489"
-                                                         transform="scale(0.0037037 0.0125)"/>
-                                                </pattern>
-                                                <image id="image0_38_27489" width="270" height="80"
-                                                       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAABQCAMAAADfnGukAAADAFBMVEUAAACWlpaRkZFmZmZ8fHxfX193d3dqampfX19jY2N+fn57e3uFhYVtbW1tbW0AAAD///+mpqZkZGQA8HYyMjIJCQnMzMxmZmYA0v8A1v8A1P+ZmZkAz/8A2f//OkRra2sCAgK9vb0Ay/8Ayf/Nzc38/Pz/yAAA3v8AwP8TExMAxP/a2toBAQAHBwcEBAQAx//+/v7x8fGdnZ2cnJz1M0gAKzPW1tYAwv8ALTN3d3cWFhYAvf8vLy8MDAzo6OhHR0cPDw/g4OBtbW3wL0wdHR0aGhr/0QAA4P8A2P8Azv8Auv/7+/v09PTu7u6tra2goKCXl5d/f3/9OEU2NjYmJiYhISHDw8Nzc3NQUFDsLUz6Nkf4NEcpKSn/zgAA3P8A0f8Axv/d3d3Hx8fAwMCzs7OwsLB7e3vyMUpEREQ7Ozv/ygD/xQD/wQAA2/8Azf/y8vLQ0NCpqannKVAAtP9WVlb8N0b/1QD/zAAAt/8Arf/Jycmjo6OQkJBeXl7jJ1BKSkoA3f8Asf/29vbi4uK2traTk5ODg4NbW1tTU1PrK04rKysRERH/xAAAqv7s7Oy5ubmKiooF6HUB7HRNTU0/Pz//2QD4+PjS0tJhYWH/0wABy/Tq6urm5ua8vLyNjY2GhoYC7XYQ1HMByXFpaWmcPmCkQVz6OUMCpP7k5OQI5HUO2nT/vgACs/wCuvsAxffExMSkpKQK4HUAxXSuQ1ffJFNCQkKFGStiEx/xihYCwPvz8/OqqqoBvncOu2+qQlkPm1XTJUmOtyYJNR9EDBYFGg9+aQcEBwUQAwUF3PwF2PwAwnYKxm0Ne0O8IkAMWzKmITLxjxYkBwvzyQEFzfwF8HgOv2QOtmDeLEXMMDcORyqOvCaOuiYAHCFRQQmdgwe9oAY6MQYeGgXpyAH81AAPDgAAzegIboEH63iTOl8DUl6wRVIYgk8Vhk4XeUkQaz7lND6gGzqUFzhQDR4KKRosBxBYSg0fIgxcUQvdswjcvQfxvwTKrQDBmQCujQAsJAAZFgA0LgLgAAAAD3RSTlMA/fqV4Q3Uj48G384Lzs10gPbyAAAMB0lEQVR42u2cB1hbVRTHBfc8N5jgQCUoUSNJTEyNEgkJCC62EIbiYEXiAhQXUykFLAooaGsRa8WqraOt1r333nvvvfce5977FrHP5Gm0FPPr9zUv4X3h5cc5/3seIW8txrprrxNfpPvfUhS/zgbrriWxdpyuvSQ74X9Ldkm7Ln4DQcaG6+mKGw3wv8bQWKzbbEOmYz1d+v9cBhOSrtuUdYou3QgxwJiu2wBTNK44VhsMQ3H8ulgcjRCD0YjlsU57rDgEDO3rrBVfAjEESuLXKsqGGALZRWvpEiCGQIIupiOm4z/XkTt3oF/vAYqeA2a9AE9xvRmq9RwzCPgz+r3Vg0CplnfTSvR1vPjxp3fB38dWWV5ASEH5mA1tEI6+hYhbgFSQFphNODcDw5PcnE9IZn0pILPJiFHYTSPR1/HerYsWLbr9a/ibWJIc9sSGhlrT+d1Uh6vI6XS2mBN2cxbiNm4Bkkx2gzins40UOnfjR2DQ5Z2/PH1OuT0zGQDSSGZQ2E0b0ddhXLDg1kVLly795B74W1Q2OXSDRouvbzmrjhQDMORt+XU6iV50WGJy9dMaWZhfMxd1ZJp6fdNDxytbbrPg1qVLV6xY9Nl9oJ3ccjJiYz3jh8h1ZMweGgWKdTnRGSCtbiIveXro2H3Lw9DHihUrlix5+EXQzNyCVIxDWUGdPycnZzCcjlbSYBQCdXaqG9JSvOOusmmj49gFDy9ZchbynOZMHSD1RgBDRTKSgAoK0pBeaxgdC8lC4JjbhqpRh2eEOK3TQsfWW26z//YLHkYZF5594fu336NVhw7EFSUNb2fXpaSkFNnC6igBjjuR6TDktjlGp4+OHRZcRG1cuPnmSx65T1uz1Hl4dWS7yqkCj8FgsIVvFh1wqgtYsxhgIL8uMD10YLfssOtVF6EMxqLHNEVpQasQj+MtGqI008uj1IlRynRYi0jLtNCB5XHs9jscftVFm4toiZBKR5qXlUnd0BivDiTsQptuShwwoo2b+UJL9yxz5U8LHVuybtl1F4WPZyKPEFtSU2Zc62jA5Si20OxIQdpywugA30TeUGHggmHTZd0g6IDJvOmgYysaHtgth+8h+9ASIZbKcgchjvJK5ZDOdLQxHfL03UIaQcQ6ZUhne/p6p8GQTnUcxrplF9GH1gjBU7iBubnKUzi+TWtEeW5m1g+CjD+j01smnMLlTJtTONQhdsseO9+IPmSevQtmMKo6tpZ07HXj1dyEHCEzFnUd2C0sPNDHlehDwVkYITMUNR1yeKCOA7gPmaWPWWBGoqJjPyk8mI6TuQ9lhHwHMxFVHVvJ4YE+jr9iqo+zX/rp3pn4ZpWKjm3l8ODlcfwVD02xseOOR/7w7cx7o1tNx35yeHAdpyl8nP3yUajjpENefyNMhLjnxzUs63WmV8MagroOeanlOk455SHJxhlcxz77vPYmqBOcMBEBV+s/zN5EQgiosQURsI8vC7gBYaNwUvR08PDYZnu+1GJ4oI8zb+E27jxa0HHIPuc9pRoh5kKipNYP/4TUMDpketIt0dexrbjU7iqXx5nog9k4WqqO80488cdXYVVkZBFK3mXzxu2EUjD271cHp93y7+hg3XK4Qselt6CNy6fqOOec71dl4yaCFI5acXuwsxy3m83/anW0b0G5IJEg6dHWcUxIeGC3YHiceemlt9x5OdNxlELHWxYIJZe+oVQTBJHKcbTxr1bHFsBJziMk3x11HXJ47CKVB+r46AbUIWUH13HOOxBKPSEk0az0Y4b/RgcsxDvJ0dWx56FCt/CldmdJxzXbXXLDn5rldQilkRByfi5EkdSIdXhMhLREWweWh2JOF3Vcs9126GOqjrd//h1CqSWEtMLq0QFphJRHX8e28pzOy+O0U9AG9yHrePute20QSo4dk9MC6vi751dmTNnBVtra6XWDAuNYYE7gWsufdViD/f1Bm3p1YHgMK3QYvRUdI9kZ/0jHqYfy8DiMTR5cxxVoQ/AhZcdT974DfyabpbsaxvkuQsnsG5SSJc5BEHtbJYi08oU6sQxFJCp0uOc0sWV70qKiIwHvFMs6kjMJo3cuQAbepirTKCNCHTthdUhzOu+WK6458MADBR9PcB1PqQylSew3oyq4y4nI+UFgjDqISKGHK4sjAvkFU3SUnk8EUnyr1FGG+5NuScdyImKaBKjD21JAuJo6iFTHoVyHfFZ75W0nnHACChF8oI4df/0NZELXFanwA4kyDQA+Fzu2tB72WvXMhokgjho7e5WsDToIJYtpUuooY49ksl3rLX/SYSlLpjvMM4o6+tko6Mqy05sgVOLNbsCYg5uVEeuQw4N1C9o4+KCD0Aci1Mcvb4AKLEmtcqnI5AHo8KZpvgejgXrJwt1y6cRWi1HiSz8Xt0oAoJsa6zODUd+s1MGfeV4pgH8YN7JVptKeUhB1eCfspNgH4C6mxegx1uBXfSyACvCbGyPWwcKDlcf226OOG287GHUwIdzHC6+COg2EkNxV69DbsSbKgGJo5i+JHmk9j8Zr6VfNAPOkH521TanDS6dbJrqsB4vEsEodDq/ynKUsWT6M+VAhWGRlUwFadKAPcfK48bZZswQfTMjn11tAFV6IwdBmSaVVDh2Kwyi1Y1WAzYHlIspz0oNmfa2Td5J1JGHRZFBtDay/tliFDpPOD0odYO3sqK9Lmhyjgzz4sBJdgKSgd1/kOrBb5Dl9l8WzkIMRJmTWdffDX9JJCOkDCTm7mtnP3QwCWLomQ5AGqHJ+K2Irk1ceI2QdLurPk+ziyZJuVugoT0KKF3aiWKUOY4WQvTSr2vhPagzAj5LjQIOOU2l4bM2W2l0XHzGLgTrw3+NPQhh8uPTXhIwjrE7jAFv2silN5W/lecFx450JuEAZxQ0KHVhIdXyhtQ+PGlXGMKUOy81EQSL2jp0VXh8+Q3XkOvZl3cInjx0W730Ewn3MeuFuEAgTHqHPStfXAegJ1VHdGapjmbqOc8V46KDxE1YHH0LObQgklwybuA7oxQfcxsvoqKZJh9gtTy/ee2/0wQvk+euNEAFzTXjIyiPmB3aZFbIUzcLvNCqbxcvuVKg1Cx/N5k16ACLTkYh5lSE1cKLwHdK72WyiqVlOZWe13Ab6oFRhaEQGnaJqlD5Km/ik2qKI0mtpAMCgSYpSvgwHQK8WpYX4//AYIBHqyCfkAmDcLOiwuPDIsETSLFqqA8uDTR6HLa6q2ruKCanC0IgUay0dpDvFUjJm59PZwgYwQKSF1peG2x0AE/JCW0kQ7GmXykLbL1eSdbg/Ah1Doo5Ku6ADJgkjGzQ1C64tqGPLxadXIWij6tG7QQPuGlbWAb3bmhMsSWOzZA4VM08Yw2zeLJr3+FiQCGOYuc8kvNxRlTHMRp+1mLaKH6NouS+sjnqU32oEQ3oPEXUYClj6eLTqwPDY+uLTESrkDgwNTZhTiAK5d/Q9fEjnqZgsT+SOLCJKUx/Sx/LonvVFdVTceG5YHXr6bYZcedLzICOEV6W2ZkEdD1583HHMx/MYGlqxBZqIgmE3cLpvIhJ9vJWKiERmKX9ohAg0Zyl1QGeectewOiDBTjgjqaKOHFRp8mvWcSraoJzexUJDO+aRLMIx1XlBojpFrJdK6SgyCcNemAMCQVYA5zp9zdhJsg4INsu7RqADSmsJMj4Jkg7rEGYVaNOBPgQbXXJoaCdjfmDOwoqBkHG4tK+htnfOqA0kPK3OiWWFU9+tc3d3dpsBHCEHb2zs6C0vClRDpOR4+4PWkCW/EbRWxwMXd3V1Hdd1x/U2WA34xJeby4bZqMFXWpfGP9HfaV+0gdyBobEa8Hc0uazy6WArRJFu2lnadMC7D1y8cmXXHV98A6uFEjqKDLJYoEOaD6JIHQ5EBo06Pvxg5cqVGBqrCUMaXR+LKy5o4+tP1OAZOwIadRiv//K6r2yw2vBnEYllVogiOkJMOWvcJyX9vURA54EokpOHc++a+MHRa1tmn9vkSiqFqOLFXxLp10QdUWQafI52zSRBF7skgYLsotgFKxSUxMcuZyJjaN8odrEbmUbd+rFLIUkYiuM2iV0oS3GhrPVjl1FTXEZt49hF9hQX2dt4w9glGKVLMMaxToldoBMpit9ofUxR5A8eeubZl1cdXAAAAABJRU5ErkJggg=="/>
-                                            </defs>
-                                        </svg>
-                                    </a></li>
-                                <li><a href="#">
-                                        <svg width="136" height="40" viewBox="0 0 136 40"
-                                             fill="none" xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <rect width="136" height="40" fill="url(#pattern1)"/>
-                                            <defs>
-                                                <pattern id="pattern1" patternContentUnits="objectBoundingBox"
-                                                         width="1" height="1">
-                                                    <use xlink:href="#image0_38_274888"
-                                                         transform="scale(0.00367647 0.0125)"/>
-                                                </pattern>
-                                                <image id="image0_38_274888" width="272" height="80"
-                                                       xlink:href="data:image/png;base64,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"/>
-                                            </defs>
-                                        </svg>
-                                    </a></li>
-                            </ul>
+                        <div class="img-section">
+                            <figure>
+                                <img src="{{asset('assets/imgs/signup-img-two.webp')}}" alt="signup image"
+                                     width="auto" height="auto">
+                            </figure>
                         </div>
                     </div>
                 </div>
+                <section class="container support-card signup_support-card">
+                    <div class="image-support">
+                        <figure>
+                            <img alt="Need Help" title="Need Help" width="184" height="222" loading="lazy"
+                                 src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                 data-original="{{asset('assets/imgs/need-help-two.webp')}}">
+                        </figure>
+                    </div>
+                    <div class="need-help">
+                        <h2>Need Help?</h2>
+                        <p>If you face any issue, feel free to contact us. We provide 24/7 support to assist to
+                            problems</p>
+                        <div><a href="tel: 06012345678">Call 06012345678</a></div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <a class="event-call-helpline contact_info" href="tel:060 123456789" id="home-page"
-           onclick="gtag_adword_conversion('');">
-            <div class='info text-decoration-none text-white text-center call-now-btn'>
-                <div class='blobs-container'>
-                    <div class='blob white'></div>
+        </div>
+
+        <a class="event-call-helpline contact_info" href="tel:06012345678">
+            <div class="info text-decoration-none text-white text-center call-now-btn">
+                <div class="blobs-container">
+                    <div class="blob white"></div>
                 </div>
-                <div class='info-wrapper'>
-                    <span class='ringing-icon-cover'>
-                        <i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11.265" height="11.285"
-                                 viewBox="0 0 11.265 11.285">
-                                <defs>
-                                    <style>
-                                        .phone_footer {
-                                            fill: none;
-                                            stroke: #fff;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                        }
-                                    </style>
-                                </defs>
-                                <path class="phone_footer"
-                                      d="M9.493,3.456a2.444,2.444,0,0,1,1.931,1.931M9.493,1.5A4.4,4.4,0,0,1,13.38,5.382m-.489,3.9V10.75a.978.978,0,0,1-1.066.978,9.675,9.675,0,0,1-4.219-1.5A9.533,9.533,0,0,1,4.673,7.293a9.675,9.675,0,0,1-1.5-4.239.978.978,0,0,1,.973-1.066H5.611a.978.978,0,0,1,.978.841A6.277,6.277,0,0,0,6.931,4.2a.978.978,0,0,1-.22,1.032l-.621.621A7.822,7.822,0,0,0,9.024,8.789l.621-.621a.978.978,0,0,1,1.032-.22,6.277,6.277,0,0,0,1.374.342A.978.978,0,0,1,12.891,9.283Z"
-                                      transform="translate(-2.668 -0.948)"/>
-                            </svg>
-                        </i>
-                    </span>
+                <div class="info-wrapper">
+<span class="ringing-icon-cover">
+<i>
+<svg xmlns="http://www.w3.org/2000/svg" width="11.265" height="11.285" viewBox="0 0 11.265 11.285"><defs><style>.phone_footer {
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }</style></defs><path class="phone_footer"
+                                  d="M9.493,3.456a2.444,2.444,0,0,1,1.931,1.931M9.493,1.5A4.4,4.4,0,0,1,13.38,5.382m-.489,3.9V10.75a.978.978,0,0,1-1.066.978,9.675,9.675,0,0,1-4.219-1.5A9.533,9.533,0,0,1,4.673,7.293a9.675,9.675,0,0,1-1.5-4.239.978.978,0,0,1,.973-1.066H5.611a.978.978,0,0,1,.978.841A6.277,6.277,0,0,0,6.931,4.2a.978.978,0,0,1-.22,1.032l-.621.621A7.822,7.822,0,0,0,9.024,8.789l.621-.621a.978.978,0,0,1,1.032-.22,6.277,6.277,0,0,0,1.374.342A.978.978,0,0,1,12.891,9.283Z"
+                                  transform="translate(-2.668 -0.948)"></path></svg>
+</i>
+</span>
                     <span>
-                        Call for assistance
-                        <div class='contact-num pt-sm-1'>
-                            060 123456789
-                        </div>
-                    </span>
+Call for assistance
+<div class="contact-num pt-sm-1">
+042 32500989
+</div>
+</span>
                 </div>
             </div>
         </a>
@@ -1369,7 +651,7 @@
             .info {
                 position: fixed;
                 color: #fff;
-                background: #003e2f;
+                background: #005C46;
                 border-radius: 30px;
                 z-index: 1031;
                 display: flex;
@@ -1419,31 +701,24 @@
                 0% {
                     box-shadow: 0 0 0 0 #fff
                 }
-
                 10% {
                     box-shadow: 0 0 0 0 #fff
                 }
-
                 25% {
                     box-shadow: 0 0 0 15px rgba(255, 255, 255, 0)
                 }
-
                 40% {
                     box-shadow: 0 0 0 0 #fff
                 }
-
                 60% {
                     box-shadow: 0 0 0 0 #fff
                 }
-
                 75% {
                     box-shadow: 0 0 0 15px rgba(255, 255, 255, 0)
                 }
-
                 90% {
                     box-shadow: 0 0 0 0 #fff
                 }
-
                 100% {
                     box-shadow: 0 0 0 0 #fff
                 }
@@ -1686,10 +961,10 @@
                              xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.99988 12.5012C10.6567 12.5012 11.9999 11.1581 11.9999 9.50122C11.9999 7.84437 10.6567 6.50122 8.99988 6.50122C7.34302 6.50122 5.99988 7.84437 5.99988 9.50122C5.99988 11.1581 7.34302 12.5012 8.99988 12.5012Z"
-                                fill="#1E4275"/>
+                                fill="#005C46"/>
                             <path
                                 d="M9.74988 3.55297V2.00122H8.24988V3.55297C6.9301 3.72148 5.70361 4.32335 4.76281 5.26415C3.82201 6.20495 3.22014 7.43145 3.05163 8.75122H1.49988V10.2512H3.05163C3.21989 11.5711 3.82168 12.7977 4.76253 13.7386C5.70337 14.6794 6.93001 15.2812 8.24988 15.4495V17.0012H9.74988V15.4495C11.0698 15.2813 12.2965 14.6796 13.2374 13.7387C14.1782 12.7978 14.78 11.5711 14.9481 10.2512H16.4999V8.75122H14.9481C14.7799 7.43135 14.1781 6.20471 13.2372 5.26387C12.2964 4.32302 11.0698 3.72124 9.74988 3.55297V3.55297ZM8.99988 14.0012C6.51813 14.0012 4.49988 11.983 4.49988 9.50122C4.49988 7.01947 6.51813 5.00122 8.99988 5.00122C11.4816 5.00122 13.4999 7.01947 13.4999 9.50122C13.4999 11.983 11.4816 14.0012 8.99988 14.0012Z"
-                                fill="#1E4275"/>
+                                fill="#005C46"/>
                     </g>
                 </defs>
             </svg>
@@ -1699,6 +974,7 @@
                         <path
                             d="M5.94709 0.50019C4.04271 0.501003 2.25386 1.41341 1.13519 2.95435C0.0163979 4.49546 -0.297216 6.4788 0.291638 8.28957C0.880658 10.1005 2.30069 11.5202 4.11196 12.1086C5.9231 12.6968 7.9064 12.3825 9.44717 11.2632L12.4104 14.2265C12.6463 14.4623 12.9902 14.5545 13.3124 14.4682C13.6347 14.3818 13.8863 14.1302 13.9727 13.8079C14.059 13.4856 13.9669 13.1418 13.731 12.9059L10.7678 9.94267C11.6333 8.75308 12.0268 7.28489 11.8727 5.8219C11.7184 4.35891 11.0274 3.00513 9.93283 2.02208C8.83846 1.03904 7.41826 0.496765 5.94731 0.500015L5.94709 0.50019ZM5.94709 10.5332C4.86414 10.5332 3.82559 10.103 3.05983 9.33724C2.29406 8.57147 1.86391 7.53293 1.86391 6.44997C1.86391 5.36701 2.29406 4.32846 3.05983 3.5627C3.82559 2.79694 4.86414 2.36679 5.94709 2.36679C7.03006 2.36679 8.0686 2.79694 8.83436 3.5627C9.60013 4.32846 10.0303 5.36701 10.0303 6.44997C10.029 7.53243 9.5985 8.57035 8.83291 9.33578C8.06748 10.1014 7.0296 10.5319 5.94709 10.5332Z"
                             fill="#183155"/>
+
             </svg>
             </g>
             </defs>
@@ -1708,7 +984,7 @@
                     <g id="header-cart">
                         <path
                             d="M24.8438 7.49575C24.8868 7.34757 24.8929 7.19207 24.8616 7.04132C24.8303 6.89056 24.7625 6.74861 24.6635 6.62647C24.5644 6.50434 24.4368 6.40529 24.2905 6.33702C24.1442 6.26876 23.9831 6.2331 23.8197 6.23283H5.57875C5.51704 6.2335 5.45703 6.21388 5.40907 6.17736C5.36111 6.14085 5.32822 6.08973 5.31608 6.03284L4.7078 3.313C4.54192 2.58519 4.11646 1.93256 3.50197 1.46333C2.88748 0.994102 2.12087 0.736469 1.32929 0.733154C0.976737 0.733154 0.638628 0.864843 0.389339 1.09925C0.140049 1.33366 0 1.65158 0 1.98308C0 2.31458 0.140049 2.6325 0.389339 2.86691C0.638628 3.10132 0.976737 3.23301 1.32929 3.23301C1.51268 3.2338 1.69021 3.29385 1.83212 3.40308C1.97404 3.51231 2.07171 3.66408 2.10878 3.83297L5.47559 18.9011C5.65018 19.6735 6.11776 20.3599 6.79106 20.832C6.82294 20.8543 6.84907 20.8831 6.8675 20.9162C6.88593 20.9494 6.89619 20.986 6.89752 21.0233C6.89885 21.0607 6.89121 21.0979 6.87517 21.1321C6.85914 21.1663 6.83511 21.1967 6.80488 21.2209C6.50405 21.4657 6.28225 21.7849 6.16468 22.1422C6.04712 22.4996 6.03849 22.8808 6.1398 23.2425C6.2411 23.6043 6.44827 23.932 6.73776 24.1886C7.02725 24.4452 7.38747 24.6202 7.77749 24.694C8.16751 24.7677 8.57169 24.737 8.94412 24.6055C9.31655 24.4741 9.6423 24.247 9.88436 23.9501C10.1264 23.6533 10.2751 23.2986 10.3135 22.9262C10.3519 22.5539 10.2784 22.1789 10.1015 21.8439C10.0811 21.8059 10.0715 21.7635 10.0735 21.721C10.0756 21.6784 10.0892 21.6371 10.1132 21.6009C10.1373 21.5649 10.1707 21.5351 10.2103 21.5145C10.2499 21.4939 10.2944 21.483 10.3397 21.4829H16.6884C16.7336 21.4829 16.7781 21.4938 16.8176 21.5145C16.8572 21.5351 16.8904 21.565 16.9143 21.6011C16.9381 21.6372 16.9518 21.6785 16.9539 21.721C16.9561 21.7635 16.9467 21.8058 16.9266 21.8439C16.766 22.1486 16.6907 22.4869 16.7078 22.8266C16.725 23.1663 16.834 23.4963 17.0245 23.7854C17.2151 24.0745 17.4809 24.3131 17.7969 24.4787C18.1128 24.6443 18.4684 24.7314 18.8301 24.7317C19.1931 24.7315 19.5501 24.644 19.8669 24.4774C20.1837 24.3109 20.45 24.0708 20.6403 23.7801C20.8305 23.4895 20.9385 23.1578 20.9539 22.8168C20.9694 22.4758 20.8917 22.1367 20.7284 21.8319C20.7085 21.7952 20.6991 21.7543 20.7009 21.7131C20.7026 21.6719 20.7156 21.6319 20.7386 21.5968C20.7615 21.5617 20.7936 21.5327 20.8319 21.5126C20.8701 21.4925 20.9132 21.4819 20.957 21.4819C21.3095 21.4819 21.6476 21.3502 21.8969 21.1158C22.1462 20.8814 22.2863 20.5635 22.2863 20.232C22.2863 19.9005 22.1462 19.5826 21.8969 19.3482C21.6476 19.1138 21.3095 18.9821 20.957 18.9821H8.85836C8.67558 18.9816 8.49848 18.9223 8.35649 18.814C8.2145 18.7058 8.11616 18.5552 8.07781 18.3871L7.88745 17.5322C7.87957 17.4958 7.88037 17.4583 7.88981 17.4223C7.89925 17.3863 7.91708 17.3527 7.94202 17.324C7.96696 17.2953 7.99838 17.2722 8.03401 17.2563C8.06963 17.2404 8.10856 17.2322 8.14799 17.2322H19.5841C20.284 17.2321 20.9644 17.0156 21.5205 16.6161C22.0766 16.2166 22.4776 15.6562 22.6617 15.0213L24.8438 7.49575Z"
-                            fill="#1E4275"/>
+                            fill="#005C46"/>
                     </g>
                 </defs>
             </svg>
@@ -1717,13 +993,13 @@
                     <g id="header-mobile-menu-icon">
                         <path
                             d="M23.2174 0.733154H6.78261C6.35039 0.733154 6 1.18087 6 1.73315V2.73315C6 3.28544 6.35039 3.73315 6.78261 3.73315H23.2174C23.6496 3.73315 24 3.28544 24 2.73315V1.73315C24 1.18087 23.6496 0.733154 23.2174 0.733154Z"
-                            fill="#1E4275"/>
+                            fill="#005C46"/>
                         <path
                             d="M22.9565 9.73315H1.04348C0.467181 9.73315 0 10.1809 0 10.7332V11.7332C0 12.2854 0.467181 12.7332 1.04348 12.7332H22.9565C23.5328 12.7332 24 12.2854 24 11.7332V10.7332C24 10.1809 23.5328 9.73315 22.9565 9.73315Z"
-                            fill="#1E4275"/>
+                            fill="#005C46"/>
                         <path
                             d="M23.4783 18.7332H12.5217C12.2336 18.7332 12 19.1809 12 19.7332V20.7332C12 21.2854 12.2336 21.7332 12.5217 21.7332H23.4783C23.7664 21.7332 24 21.2854 24 20.7332V19.7332C24 19.1809 23.7664 18.7332 23.4783 18.7332Z"
-                            fill="#1E4275"/>
+                            fill="#005C46"/>
                     </g>
                 </defs>
             </svg>
@@ -1841,10 +1117,10 @@
                     <g id="camera-icon">
                         <path
                             d="M6.48209 4.66797C5.42811 4.66797 4.53748 5.58397 4.53748 6.66797C4.53748 7.75197 5.42811 8.66797 6.48209 8.66797C7.53607 8.66797 8.4267 7.75197 8.4267 6.66797C8.4267 5.58397 7.53607 4.66797 6.48209 4.66797Z"
-                            fill="#1E4275"/>
+                            fill="#005C46"/>
                         <path
                             d="M11.6677 2H9.99143L8.23674 0.195334C8.17665 0.133306 8.10522 0.0841138 8.02657 0.0505903C7.94792 0.0170668 7.86359 -0.000126299 7.77846 6.98449e-07H5.18564C5.1005 -0.000126299 5.01618 0.0170668 4.93753 0.0505903C4.85888 0.0841138 4.78745 0.133306 4.72736 0.195334L2.97267 2H1.29641C0.58144 2 0 2.598 0 3.33333V10.6667C0 11.402 0.58144 12 1.29641 12H11.6677C12.3827 12 12.9641 11.402 12.9641 10.6667V3.33333C12.9641 2.598 12.3827 2 11.6677 2ZM6.48205 10C4.72541 10 3.24102 8.47333 3.24102 6.66667C3.24102 4.86 4.72541 3.33333 6.48205 3.33333C8.23868 3.33333 9.72307 4.86 9.72307 6.66667C9.72307 8.47333 8.23868 10 6.48205 10Z"
-                            fill="#1E4275"/>
+                            fill="#005C46"/>
                     </g>
                 </defs>
             </svg>
@@ -2022,17 +1298,17 @@
 
         </footer>
     </div>
+
 </main>
 <div class="global-search-modal" id="elastic-search" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                    <span class="back-menu cross-icon">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#menu-back-arrow"></use>
-                        </svg>
-                    </span>
+<span class="back-menu cross-icon">
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<use xlink:href="#menu-back-arrow"></use>
+</svg>
+</span>
                 <h3>Back</h3>
             </div>
             <div class="modal-body">
@@ -2040,41 +1316,69 @@
                     <div class="mobile-search-area">
                         <div class="select-cover location">
                             <div id="search_cities">
-                                <input name="city_name_header" id="city_name_header"
-                                       class="city_name_header search_bar_city typeahead tt-query event-city-selection-doctor-search"
-                                       type="text" placeholder="City" value="">
-                                <input type="hidden" name="locality" id="locality" value=""
-                                       class="locality"/>
+                                <span class="twitter-typeahead"
+                                      style="position: relative; display: inline-block;"><input
+                                        class="city_name_header search_bar_city typeahead tt-query event-city-selection-doctor-search tt-hint"
+                                        type="text" value="" readonly="" autocomplete="off" spellcheck="false"
+                                        tabindex="-1" dir="ltr"
+                                        style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input
+                                        name="city_name_header" id="city_name_header"
+                                        class="city_name_header search_bar_city typeahead tt-query event-city-selection-doctor-search tt-input"
+                                        type="text" placeholder="City" value="" autocomplete="off" spellcheck="false"
+                                        dir="auto"
+                                        style="position: relative; vertical-align: top; background-color: transparent;"><pre
+                                        aria-hidden="true"
+                                        style="position: absolute; visibility: hidden; white-space: pre; font-family: poppins, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div
+                                        class="tt-menu"
+                                        style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div
+                                            class="tt-dataset tt-dataset-Areas"></div></div></span>
+                                <input type="hidden" name="locality" id="locality" value="" class="locality">
                             </div>
                             <div class="detect-location">
                                 <div class="loader spinner-border d-none"></div>
                                 <span class="location-icon">
-                                        <span class="icon-mobile-location">
-                                            <svg width="20" height="20" viewBox="0 0 20 20"
-                                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_8791_106607)">
-                                                    <path
-                                                        d="M10.0013 13.3337C11.8423 13.3337 13.3346 11.8413 13.3346 10.0003C13.3346 8.15938 11.8423 6.66699 10.0013 6.66699C8.16035 6.66699 6.66797 8.15938 6.66797 10.0003C6.66797 11.8413 8.16035 13.3337 10.0013 13.3337Z"
-                                                        fill="#1E4275"/>
-                                                    <path
-                                                        d="M19.1667 9.16667H17.8142C17.7152 9.16652 17.6195 9.13114 17.5442 9.06686C17.4689 9.00257 17.419 8.91358 17.4033 8.81583C17.1515 7.25728 16.4151 5.81764 15.2987 4.70128C14.1824 3.58491 12.7427 2.84853 11.1842 2.59667C11.0864 2.58103 10.9974 2.53109 10.9331 2.45581C10.8689 2.38053 10.8335 2.28483 10.8333 2.18583V0.833333C10.8333 0.61232 10.7455 0.400358 10.5893 0.244078C10.433 0.0877974 10.221 0 10 0C9.77899 0 9.56702 0.0877974 9.41074 0.244078C9.25446 0.400358 9.16667 0.61232 9.16667 0.833333V2.18583C9.16652 2.28483 9.13114 2.38053 9.06686 2.45581C9.00257 2.53109 8.91358 2.58103 8.81583 2.59667C7.25728 2.84853 5.81764 3.58491 4.70128 4.70128C3.58491 5.81764 2.84853 7.25728 2.59667 8.81583C2.58103 8.91358 2.53109 9.00257 2.45581 9.06686C2.38053 9.13114 2.28483 9.16652 2.18583 9.16667H0.833333C0.61232 9.16667 0.400358 9.25446 0.244078 9.41074C0.0877974 9.56702 0 9.77899 0 10C0 10.221 0.0877974 10.433 0.244078 10.5893C0.400358 10.7455 0.61232 10.8333 0.833333 10.8333H2.18583C2.28483 10.8335 2.38053 10.8689 2.45581 10.9331C2.53109 10.9974 2.58103 11.0864 2.59667 11.1842C2.84853 12.7427 3.58491 14.1824 4.70128 15.2987C5.81764 16.4151 7.25728 17.1515 8.81583 17.4033C8.91358 17.419 9.00257 17.4689 9.06686 17.5442C9.13114 17.6195 9.16652 17.7152 9.16667 17.8142V19.1667C9.16667 19.3877 9.25446 19.5996 9.41074 19.7559C9.56702 19.9122 9.77899 20 10 20C10.221 20 10.433 19.9122 10.5893 19.7559C10.7455 19.5996 10.8333 19.3877 10.8333 19.1667V17.8142C10.8335 17.7152 10.8689 17.6195 10.9331 17.5442C10.9974 17.4689 11.0864 17.419 11.1842 17.4033C12.7427 17.1515 14.1824 16.4151 15.2987 15.2987C16.4151 14.1824 17.1515 12.7427 17.4033 11.1842C17.419 11.0864 17.4689 10.9974 17.5442 10.9331C17.6195 10.8689 17.7152 10.8335 17.8142 10.8333H19.1667C19.3877 10.8333 19.5996 10.7455 19.7559 10.5893C19.9122 10.433 20 10.221 20 10C20 9.77899 19.9122 9.56702 19.7559 9.41074C19.5996 9.25446 19.3877 9.16667 19.1667 9.16667ZM10 15.8333C8.84628 15.8333 7.71846 15.4912 6.75917 14.8502C5.79989 14.2093 5.05221 13.2982 4.6107 12.2323C4.16919 11.1664 4.05367 9.99353 4.27875 8.86197C4.50383 7.73042 5.0594 6.69102 5.87521 5.87521C6.69102 5.0594 7.73042 4.50383 8.86197 4.27875C9.99353 4.05367 11.1664 4.16919 12.2323 4.6107C13.2982 5.05221 14.2093 5.79989 14.8502 6.75917C15.4912 7.71846 15.8333 8.84628 15.8333 10C15.8316 11.5466 15.2164 13.0293 14.1228 14.1228C13.0293 15.2164 11.5466 15.8316 10 15.8333V15.8333Z"
-                                                        fill="#1E4275"/>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_8791_106607">
-                                                        <rect width="20" height="20" fill="white"/>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </span>
-                                    </span>
+<span class="icon-mobile-location">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8791_106607)">
+<path
+    d="M10.0013 13.3337C11.8423 13.3337 13.3346 11.8413 13.3346 10.0003C13.3346 8.15938 11.8423 6.66699 10.0013 6.66699C8.16035 6.66699 6.66797 8.15938 6.66797 10.0003C6.66797 11.8413 8.16035 13.3337 10.0013 13.3337Z"
+    fill="#005C46"></path>
+<path
+    d="M19.1667 9.16667H17.8142C17.7152 9.16652 17.6195 9.13114 17.5442 9.06686C17.4689 9.00257 17.419 8.91358 17.4033 8.81583C17.1515 7.25728 16.4151 5.81764 15.2987 4.70128C14.1824 3.58491 12.7427 2.84853 11.1842 2.59667C11.0864 2.58103 10.9974 2.53109 10.9331 2.45581C10.8689 2.38053 10.8335 2.28483 10.8333 2.18583V0.833333C10.8333 0.61232 10.7455 0.400358 10.5893 0.244078C10.433 0.0877974 10.221 0 10 0C9.77899 0 9.56702 0.0877974 9.41074 0.244078C9.25446 0.400358 9.16667 0.61232 9.16667 0.833333V2.18583C9.16652 2.28483 9.13114 2.38053 9.06686 2.45581C9.00257 2.53109 8.91358 2.58103 8.81583 2.59667C7.25728 2.84853 5.81764 3.58491 4.70128 4.70128C3.58491 5.81764 2.84853 7.25728 2.59667 8.81583C2.58103 8.91358 2.53109 9.00257 2.45581 9.06686C2.38053 9.13114 2.28483 9.16652 2.18583 9.16667H0.833333C0.61232 9.16667 0.400358 9.25446 0.244078 9.41074C0.0877974 9.56702 0 9.77899 0 10C0 10.221 0.0877974 10.433 0.244078 10.5893C0.400358 10.7455 0.61232 10.8333 0.833333 10.8333H2.18583C2.28483 10.8335 2.38053 10.8689 2.45581 10.9331C2.53109 10.9974 2.58103 11.0864 2.59667 11.1842C2.84853 12.7427 3.58491 14.1824 4.70128 15.2987C5.81764 16.4151 7.25728 17.1515 8.81583 17.4033C8.91358 17.419 9.00257 17.4689 9.06686 17.5442C9.13114 17.6195 9.16652 17.7152 9.16667 17.8142V19.1667C9.16667 19.3877 9.25446 19.5996 9.41074 19.7559C9.56702 19.9122 9.77899 20 10 20C10.221 20 10.433 19.9122 10.5893 19.7559C10.7455 19.5996 10.8333 19.3877 10.8333 19.1667V17.8142C10.8335 17.7152 10.8689 17.6195 10.9331 17.5442C10.9974 17.4689 11.0864 17.419 11.1842 17.4033C12.7427 17.1515 14.1824 16.4151 15.2987 15.2987C16.4151 14.1824 17.1515 12.7427 17.4033 11.1842C17.419 11.0864 17.4689 10.9974 17.5442 10.9331C17.6195 10.8689 17.7152 10.8335 17.8142 10.8333H19.1667C19.3877 10.8333 19.5996 10.7455 19.7559 10.5893C19.9122 10.433 20 10.221 20 10C20 9.77899 19.9122 9.56702 19.7559 9.41074C19.5996 9.25446 19.3877 9.16667 19.1667 9.16667ZM10 15.8333C8.84628 15.8333 7.71846 15.4912 6.75917 14.8502C5.79989 14.2093 5.05221 13.2982 4.6107 12.2323C4.16919 11.1664 4.05367 9.99353 4.27875 8.86197C4.50383 7.73042 5.0594 6.69102 5.87521 5.87521C6.69102 5.0594 7.73042 4.50383 8.86197 4.27875C9.99353 4.05367 11.1664 4.16919 12.2323 4.6107C13.2982 5.05221 14.2093 5.79989 14.8502 6.75917C15.4912 7.71846 15.8333 8.84628 15.8333 10C15.8316 11.5466 15.2164 13.0293 14.1228 14.1228C13.0293 15.2164 11.5466 15.8316 10 15.8333V15.8333Z"
+    fill="#005C46"></path>
+</g>
+<defs>
+<clipPath id="clip0_8791_106607">
+<rect width="20" height="20" fill="white"></rect>
+</clipPath>
+</defs>
+</svg>
+</span>
+</span>
                             </div>
                         </div>
                         <div class="select-cover speciality">
-                            <input type="text" name="doctor_name_header" id="search_doctors_header"
-                                   class="search_doctors_header all-search-section search_bar_doc_header typeahead tt-query tt-input event-speciality-selection-doctor-search"
-                                   placeholder="Search for doctors, specialities, diseases or hospitals"
-                                   value=""></input>
+                            <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                    type="text"
+                                    class="search_doctors_header all-search-section search_bar_doc_header typeahead tt-query tt-input event-speciality-selection-doctor-search tt-hint"
+                                    value="" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"
+                                    style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input
+                                    type="text" name="doctor_name_header" id="search_doctors_header"
+                                    class="search_doctors_header all-search-section search_bar_doc_header typeahead tt-query tt-input event-speciality-selection-doctor-search"
+                                    placeholder="Search for doctors, specialities, diseases or hospitals" value=""
+                                    autocomplete="off" spellcheck="false" dir="auto"
+                                    style="position: relative; vertical-align: top; background-color: transparent;"><pre
+                                    aria-hidden="true"
+                                    style="position: absolute; visibility: hidden; white-space: pre; font-family: poppins, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div
+                                    class="tt-menu"
+                                    style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div
+                                        class="tt-dataset tt-dataset-Specialities"></div><div
+                                        class="tt-dataset tt-dataset-Doctors"></div><div
+                                        class="tt-dataset tt-dataset-Products"></div><div
+                                        class="tt-dataset tt-dataset-Lab_Tests"></div><div
+                                        class="tt-dataset tt-dataset-Classifications"></div><div
+                                        class="tt-dataset tt-dataset-Practices"></div><div
+                                        class="tt-dataset tt-dataset-Diseases"></div></div></span>
                             <div class="arrow-down"></div>
                         </div>
                     </div>
@@ -2085,20 +1389,6 @@
 </div>
 <script src="{{asset('assets/js/navi_cart.min.js')}}" defer="defer"></script>
 <script src="{{asset('assets/js/common.min.js')}}" defer="defer"></script>
-
-<script>
-    x = 0
-    $(window).scroll(function () {
-        if (x == 0) {
-            $('img[loading="lazy"]').each(function (index, element) {
-                element.src = element.dataset.original
-            });
-        }
-        ;
-        x = 1;
-    });
-</script>
-
 
 <script>
     $(".user-img").click(function (event) {
